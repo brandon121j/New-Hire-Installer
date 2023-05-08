@@ -184,7 +184,6 @@
             // 
             // loadingPB
             // 
-            loadingPB.Cursor = Cursors.Hand;
             loadingPB.Image = (Image)resources.GetObject("loadingPB.Image");
             loadingPB.Location = new Point(86, 36);
             loadingPB.Name = "loadingPB";
@@ -271,6 +270,7 @@
             Controls.Add(bodyPN);
             Controls.Add(titleBarPN);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             bodyPN.ResumeLayout(false);
@@ -296,12 +296,12 @@
         private Button submitBT;
         private Custom_Controls.CloseButton closeBT;
         private Custom_Controls.MinimizeButton minimizeBT;
-        public static ErrorProvider errorProvider;
-        protected static Panel msiPN;
-        protected static PictureBox msiPB;
-        protected static PictureBox folderPB;
-        protected static Panel folderPN;
-        protected static Custom_Controls.CustomTextBox msiTB;
-        protected static Custom_Controls.CustomTextBox folderTB;
+        public ErrorProvider errorProvider;
+        public Panel msiPN;
+        public PictureBox msiPB;
+        public PictureBox folderPB;
+        public Panel folderPN;
+        public Custom_Controls.CustomTextBox msiTB;
+        public Custom_Controls.CustomTextBox folderTB;
     }
 }
